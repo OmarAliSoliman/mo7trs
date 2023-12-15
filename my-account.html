@@ -22,7 +22,6 @@
 <body class="body-color">
 
 
-
   <div class="custom-navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
@@ -75,55 +74,109 @@
   </div>
 
 
-  <div class="login-page">
-    <div class="container-fluid pd-100">
-      <div class="form-box col-lg-6 mx-auto">
-        <div class="box-title">
-          <div class="card-img">
-            <div class="img-parent">
-              <img src="./assets/images/loginboximg.png" alt="">
-            </div>
-            <div class="card-img-titl">
-              <h5>مرحبا بك في محترس</h5>
-              <h6>تسجيل الدخول</h6>
-              <p>ادخل بياناتك حتي تتمكن من الدخول</p>
-            </div>
-          </div>
-        </div>
-        <div class="box-body">
-         <form action="">
-          <div class="row">
-            
 
-            <div class="col-sm-12 col-lg-12">
-              <div class="second-form-group">
-                <i class="fas far fa-envelope"></i>
-                <input type="email" name="" id="" placeholder="الرقم السري الجديد" class="form-control">
+  <div class="main-content home-main-content myaccount-profile ">
+    <div class="wrapper">
+      <div class="container-fluid pd-100">
+        <div class="profile-page">
+          <div class="wrapper">
+            <div class="container-fluid pd-100">
+              <div class="open-profile-sidebar">
+                <i class="fas fa-bars"></i>
               </div>
             </div>
+            <div class="">
+              <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                  <div class="profile-sidebar">
+                    <div class="close-sidebar">
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <div class="profile-picture">
+                      <div class="card-img">
+                        <div class="img-parent">
+                          <img src="./assets/images/person.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="side-list list-unstyled">
+                      <li><a class="active" href=""><i class="fas fa-user-circle"></i><span>البيانات الشخصية</span></a>
+                      </li>
+                      <li><a href=""><i class="fas fas fa-ad"></i><span>اعلاناتي</span></a></li>
+                      <li><a href=""><i class="fas fa-heart"></i><span>المتابعه</span></a></li>
+                      <li><a href=""><i class="fas fa-money-check-alt"></i><span>عمولة الموقع</span></a></li>
+                      <li><a href=""><i class="fas fa-cog"></i><span>الاعدادات</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-9">
+                  <div class="profile-left-data">
+                    <div class="profile-user-data">
+                      <div class="head text-center">
+                        <h5>حسابي</h5>
+                      </div>
+                      <form action="">
+                        <div class="row">
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="form-group mb-5 mt-1">
+                              <div class="personal-img">
+                                <div class="per" style="background-image: url('./assets/images/person.png');"></div>
+                                <div class="upload-btn-wrapper">
+                                  <button class="btn">
+                                    <i class="fas fa-plus"></i>
+                                  </button>
+                                  <input type="file" data-file-upload="" class="personal-img-file" name="myfile" />
+                                </div>
 
-            <div class="col-sm-12 col-lg-12">
-              <div class="second-form-group">
-                <i class="fas far fa-envelope"></i>
-                <input type="email" name="" id="" placeholder="تأكيد الرقم السري الجديد" class="form-control">
+                              </div>
+                              <h5>رفع صورة</h5>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                              <label for=""><i class="fas fa-user-circle"></i><span>الاسم</span></label>
+                              <input type="text" name="" placeholder="احمد علي ابراهيم" id="" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                              <label for=""><i class="far fa-envelope"></i><span>البريد الالكتروني</span></label>
+                              <input type="text" name="" placeholder="Ahmed@gmail.com" id="" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                              <label for=""><i class="fas fa-mobile-alt"></i><span>رقم الجوال</span></label>
+                              <input type="text" name="" placeholder="966055356757" id="" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="btn-options">
+                              <div class="btn-more">
+                                <a href="" class="btn-style">حفظ</a>
+                              </div>
+                              <div class="btn-more btn-change-pass">
+                                <a href="" class="btn-style">تغيير الرقم السري</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
-
-
-            <div class="btn-submit">
-              <a href="" class="btn-style"> تأكيد </a>
-            </div>
-
-
           </div>
-         </form>
         </div>
       </div>
     </div>
   </div>
 
 
-  <footer class="footer custom-footer">
+
+  <footer class="footer">
     <div class="footer-img">
       <img src="./assets/images/footer-img.webp" alt="">
     </div>
@@ -210,6 +263,8 @@
       </div>
     </div>
   </footer>
+
+
 
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>

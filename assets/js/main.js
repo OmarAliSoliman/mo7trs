@@ -15,7 +15,24 @@ $(document).ready(function () {
 
 
   if ($(".custom_input_file").length) {
-    $("#inputfile").on("change", function (e) {
+    $("body").on("change","#pills-home #inputfile" ,function (e) {
+      let file_name = e.target.files[0].name;
+      console.log(this.files[0].mozFullPath);
+      console.log(e.target.files[0])
+      let catditem = $(this)
+        .closest(".moda_images")
+        .find(".card-img:last")
+        .clone();
+      // $(this).closest(".moda_images .images_file").append(catditem);
+      $(catditem).insertBefore(".custom_input_file");
+      $(catditem)
+        .find(".img-parent img")
+        .attr("src", `./assets/images/${file_name}`);
+    });
+  }
+
+  if ($(".custom_input_file").length) {
+    $("body").on("change", "#pills-profile #inputfile" ,function (e) {
       let file_name = e.target.files[0].name;
       console.log(this.files[0].mozFullPath);
       console.log(e.target.files[0])
