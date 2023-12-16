@@ -1323,9 +1323,6 @@ p {
 }
 
 /* ================================================================ */
-.profile-owner-breadcrumb {
-  margin-top: 50px;
-}
 .profile-owner-breadcrumb .card-img {
   height: 47vh;
 }
@@ -1634,7 +1631,7 @@ p {
 }
 .chat-message.message-receive .message {
   margin-right: auto;
-  background-image: linear-gradient(to left, #21BE41, rgba(210, 210, 210, 0.8666666667));
+  background-image: linear-gradient(to left, #21be41, rgba(210, 210, 210, 0.8666666667));
   border-bottom-left-radius: 0;
 }
 .chat-message.message-receive p {
@@ -2006,7 +2003,7 @@ p {
   align-items: center;
 }
 .onecategory-card .card-option a {
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2024,10 +2021,10 @@ p {
   box-shadow: none;
 }
 .onecategory-card .card-option .fa-edit {
-  color: #21BE41;
+  color: #21be41;
 }
 .onecategory-card .card-option .fa-trash-alt {
-  color: #B90000;
+  color: #b90000;
 }
 
 /* ================================================================ */
@@ -2069,7 +2066,7 @@ p {
   text-align: center;
 }
 .omola-announcment .site-omola-form .form-control {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .omola-announcment .site-omola-form .price {
   background-color: rgba(33, 190, 65, 0.38);
@@ -2158,7 +2155,176 @@ p {
 }
 
 /* ================================================================ */
+.site-omola-page {
+  padding: 40px 0;
+}
+.site-omola-page .site-omola-box {
+  margin-bottom: 15px;
+  background-color: #f7f7f7;
+  padding: 44px 25px;
+}
+.site-omola-page .site-omola-content {
+  text-align: center;
+}
+.site-omola-page .site-omola-content h5 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.site-omola-page .site-omola-content p {
+  color: #535353;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.site-omola-page .site-omola-price h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.site-omola-page .site-omola-price form {
+  margin-bottom: 80px;
+}
+.site-omola-page .site-omola-price .site-omola-form {
+  margin-top: 50px;
+}
+.site-omola-page .site-omola-price .site-omola-form h6 {
+  color: #21be41;
+}
+.site-omola-page .site-omola-price .site-omola-form p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.site-omola-page .site-omola-price .site-omola-form .form-control {
+  height: 70px;
+  background-color: transparent;
+}
+.site-omola-page .site-omola-price .site-omola-form .btn-style {
+  height: 70px;
+  width: 340px;
+  max-width: 100%;
+}
+.site-omola-page .omolaprice {
+  text-align: center;
+}
+.site-omola-page .omolaprice .price {
+  background-color: rgba(33, 190, 65, 0.12);
+  padding: 15px 50px;
+  font-size: 1.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  color: #21be41;
+}
+.site-omola-page .omolaprice .price span {
+  font-size: 1rem;
+}
+.site-omola-page .site-omola-payment .table {
+  vertical-align: middle;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.site-omola-page .site-omola-payment .table thead td span {
+  color: #21be41;
+  font-size: 1.1rem;
+}
+.site-omola-page .site-omola-payment .table tbody td {
+  padding: 10px 0;
+}
+.site-omola-page .site-omola-payment .table tbody td img {
+  max-width: 140px;
+}
+.site-omola-page .site-omola-payment .table tbody td h5 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.site-omola-page .new-announsment-page .new-announsment-wrapper {
+  padding: 0;
+  background-color: transparent;
+}
+.site-omola-page .new-announsment-page .new-announsment-wrapper .head h5 {
+  font-size: 1.8rem;
+}
+.site-omola-page .new-announsment-page .new-announsment-wrapper .head p {
+  color: #535353;
+}
+.site-omola-page .new-announsment-page .new-announsment-wrapper .new-announsment-form h4 {
+  color: #21be41;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.site-omola-page .new-announsment-page .new-announsment-wrapper .new-announsment-form .note {
+  color: #ab0404;
+  font-size: 1rem;
+}
+
 /* ================================================================ */
+.announcment-detials-page {
+  margin-top: 30px;
+}
+.announcment-detials-page .announcment-detials-img .card-img {
+  height: 607px;
+  border-radius: 25px;
+}
+.announcment-detials-page .announcment-detials-img .card-img img {
+  border-radius: 25px;
+}
+.announcment-detials-page .announcment-detials-price .price {
+  background-color: #F7F7F7;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+  padding: 35px;
+  text-align: center;
+}
+.announcment-detials-page .announcment-detials-price .price h5 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #21be41;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder {
+  background-color: #F7F7F7;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+  margin-top: 30px;
+  padding: 30px 13px;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .img-name .card-img {
+  width: 100px;
+  height: 78px;
+  border-radius: 9px;
+  margin-left: 15px;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .img-name .card-img img {
+  border-radius: 9px;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .img-name .name h5 {
+  font-size: 1.2rem;
+  color: #535353;
+  font-family: conl;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .img-name a {
+  color: #21be41;
+  font-size: 1rem;
+  font-family: conl;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .contact-details a {
+  border: 1px solid #fe0000;
+  padding: 17px;
+  border-radius: 9px;
+  color: #010101;
+  margin-right: 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  max-width: 100%;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .contact-details a i {
+  margin-left: 5px;
+}
+.announcment-detials-page .announcment-detials-price .annousment-holder .contact-details a.phone {
+  background-color: #21be41;
+  color: #fff;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
