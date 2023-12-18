@@ -15,17 +15,58 @@
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
 
 <body class="body-color">
 
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="side-wrapper">
+        <div class="person-info">
+          <div class="card-img">
+            <div class="img-parent">
+              <img src="./assets/images/person.png" alt="">
+            </div>
+          </div>
+          <a href=""><img src="./assets/images/commentblack.svg" alt=""></a>
+          <a href=""><img src="./assets/images/billblack.svg" alt=""></a>
+        </div>
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item "><a class="nav-link" href="./index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">الاقسام</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">اتصل بنا</a></li>
+            <li class="login-item"><a href="" class="btn-style btn-style-rounded ">تسجيل الدخول</a></li>
+            <li class="signup-item"><a href="" class="btn-style btn-style-rounded new-account">انشاء حساب جديد</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="custom-navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+        <div class="col-6 col-md-4 col-lg-6 col-xl-7">
           <div class="logo-links d-flex align-items-center">
             <div class="menu_icon">
               <div id="nav-icon1">
@@ -50,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <div class="col-6 col-md-8 col-lg-6 col-xl-5">
           <div class="navbar-option mb-0  d-flex justify-content-end">
             <ul class="list-unstyled d-flex align-items-center">
               <li><a href="" class="chat-icon"><img src="./assets/images/chat.svg" alt=""></a></li>
@@ -122,6 +163,301 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search">
+    <div class="container-fluid pd-100">
+      <div class="search-container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">شراء</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">بيع</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false">إيجار</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="tab-contetn-wrap">
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-12 col-md-9 col-lg-12 col-xl-10">
+                    <div class="form-wrap d-flex align-items-center">
+                      <div class="form-group">
+                        <label for="">الدولة</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">السعودية</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">المدينة</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">الرياض</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">القسم</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">عقارات</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">كلمة البحث</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="فيلا مودرن">
+                      </div>
+
+                      <div class="form-group">
+                        <div class="btn-submit">
+                          <button type="submit" class="btn-style">ابحث الان</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-3 col-lg-12 col-xl-2">
+                    <div class="btn-advanced-search">
+                      <button class="btn-style">
+                        <i class="fas fa-search"></i>
+                        <span>بحث متقدرم</span>
+                      </button>
+
+                      <div class="advanced-search-box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col-sm-12 col-lg-12">
+                              <div class="form-group">
+                                <label for="">كلمة البحث</label>
+                                <input type="text" name="" id="" class="form-control" placeholder="فيلا مودرن">
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">الدولة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">السعودية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">المدينة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الرياض</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">القسم</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">عقارات</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الماركة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">اختر الماركة</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">نوع الماركة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">اختر النوع</option>
+                                </select>
+                              </div>
+                            </div>
+
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الموديل</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">من</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for=""></label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الى</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الأقرب اليك</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الرياض</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-12">
+                              <div class="btn-submit text-center">
+                                <button type="submit" class="btn-style">ابحث الان</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="tab-contetn-wrap">
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-12 col-md-9 col-lg-10">
+                    <div class="form-wrap d-flex align-items-center">
+                      <div class="form-group">
+                        <label for="">الدولة</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">السعودية</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">المدينة</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">الرياض</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">القسم</label>
+                        <select name="" class="custom-select form-control" id="">
+                          <option value="">عقارات</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">كلمة البحث</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="فيلا مودرن">
+                      </div>
+
+                      <div class="form-group">
+                        <div class="btn-submit">
+                          <button type="submit" class="btn-style">ابحث الان</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="btn-advanced-search">
+                      <button class="btn-style">
+                        <i class="fas fa-search"></i>
+                        <span>بحث متقدرم</span>
+                      </button>
+
+                      <div class="advanced-search-box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col-sm-12 col-lg-12">
+                              <div class="form-group">
+                                <label for="">كلمة البحث</label>
+                                <input type="text" name="" id="" class="form-control" placeholder="فيلا مودرن">
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">الدولة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">السعودية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">المدينة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الرياض</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                              <div class="form-group">
+                                <label for="">القسم</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">عقارات</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الماركة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">اختر الماركة</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">نوع الماركة</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">اختر النوع</option>
+                                </select>
+                              </div>
+                            </div>
+
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الموديل</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">من</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for=""></label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الى</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <div class="form-group">
+                                <label for="">الأقرب اليك</label>
+                                <select name="" class="custom-select form-control" id="">
+                                  <option value="">الرياض</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-12">
+                              <div class="btn-submit text-center">
+                                <button type="submit" class="btn-style">ابحث الان</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...
           </div>
         </div>
       </div>
@@ -249,6 +585,7 @@
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
   <script src="./assets/js/wow.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>

@@ -76,6 +76,14 @@ $(document).ready(function () {
   }
 
 
+  if($(".advanced-search-box").length){
+    $(".btn-advanced-search").on('click', function(e){
+      e.preventDefault();
+      $(this).parent().find(".advanced-search-box").slideToggle();
+    })
+  }
+
+
   AOS.init();
 
   $("html").addClass("splash-active");

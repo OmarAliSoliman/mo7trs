@@ -15,16 +15,59 @@
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
 
 <body class="body-color">
 
+
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="side-wrapper">
+        <div class="person-info">
+          <div class="card-img">
+            <div class="img-parent">
+              <img src="./assets/images/person.png" alt="">
+            </div>
+          </div>
+          <a href=""><img src="./assets/images/commentblack.svg" alt=""></a>
+          <a href=""><img src="./assets/images/billblack.svg" alt=""></a>
+        </div>
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item "><a class="nav-link" href="./index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">الاقسام</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">اتصل بنا</a></li>
+            <li class="login-item"><a href="" class="btn-style btn-style-rounded ">تسجيل الدخول</a></li>
+            <li class="signup-item"><a href="" class="btn-style btn-style-rounded new-account">انشاء حساب جديد</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="custom-navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+        <div class="col-6 col-md-4 col-lg-6 col-xl-7">
           <div class="logo-links d-flex align-items-center">
             <div class="menu_icon">
               <div id="nav-icon1">
@@ -49,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <div class="col-6 col-md-8 col-lg-6 col-xl-5">
           <div class="navbar-option mb-0  d-flex justify-content-end">
             <ul class="list-unstyled d-flex align-items-center">
               <li><a href="" class="chat-icon"><img src="./assets/images/chat.svg" alt=""></a></li>
@@ -86,7 +129,7 @@
             </div>
             <div class="">
               <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-3">
+                <div class="col-sm-12 col-md-12 col-lg-3">
                   <div class="profile-sidebar">
                     <div class="close-sidebar">
                       <i class="fas fa-times"></i>
@@ -112,7 +155,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-7 col-lg-9">
+                <div class="col-sm-12 col-md-12 col-lg-9">
                   <div class="profile-left-data">
                     <div class="profile-user-data">
                       <div class="head text-center">
@@ -122,9 +165,10 @@
                         <div class="col-lg-12">
                           <div class="onecategory-card d-flex  wow animate__animated animate__fadeInUp">
                             <div class="card-option">
-                              <a href="">تحديث الاعلان</a>
-                              <a href=""><i class="fas fa-edit"></i></a>
-                              <a href=""><i class="fas fa-trash-alt"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#siteomolaModal2">تحديث الاعلان</a>
+                              <a data-bs-toggle="modal" data-bs-target="#isseelingmodal"><i class="fas fa-edit"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#siteomolaModal"><i
+                                  class="fas fa-trash-alt"></i></a>
                             </div>
                             <div class="card-img">
                               <div class="img-parent">
@@ -242,9 +286,10 @@
                         <div class="col-lg-12">
                           <div class="onecategory-card d-flex  wow animate__animated animate__fadeInUp">
                             <div class="card-option">
-                              <a href="">تحديث الاعلان</a>
-                              <a href=""><i class="fas fa-edit"></i></a>
-                              <a href=""><i class="fas fa-trash-alt"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#siteomolaModal2">تحديث الاعلان</a>
+                              <a data-bs-toggle="modal" data-bs-target="#isseelingmodal"><i class="fas fa-edit"></i></a>
+                              <a data-bs-toggle="modal" data-bs-target="#siteomolaModal"><i
+                                  class="fas fa-trash-alt"></i></a>
                             </div>
                             <div class="card-img">
                               <div class="img-parent">
@@ -380,6 +425,116 @@
   </footer>
 
 
+  <!-- Modal -->
+  <div class="modal fade" id="isseelingmodal" tabindex="-1" aria-labelledby="isseelingmodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="./assets/images/modalimg.svg" alt="">
+          <h5>هل تم البيع من خلال موقعنا</h5>
+          <div class="buttons d-flex align-items-center justify-content-center">
+            <a href="">نعم</a>
+            <a href="">لا</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 3mola 2 -->
+
+  <div class="modal fade" id="siteomolaModal" tabindex="-1" aria-labelledby="siteomolaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5>دفع عمولة الموقع</h5>
+          <div class="price">
+            <h5>6000 <span>ر.س</span></h5>
+          </div>
+          <div class="buttons d-flex align-items-center justify-content-center">
+            <a href="">دفع العمولة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 3mola 3 -->
+
+  <div class="modal fade" id="siteomolaModal2" tabindex="-1" aria-labelledby="siteomolaModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5>دفع عمولة الموقع</h5>
+
+          <div class="profile-left-data omola-announcment">
+            <div class="profile-user-data">
+
+              <div class="choose-bank">
+                <select name="" id="" class="custom-select">
+                  <option value="">اختر المصرف</option>
+                </select>
+
+                <div class="bank-box col-lg-10 d-flex align-items-center">
+                  <div class="bank-img">
+                    <div class="img-parent">
+                      <img src="./assets/images/bank.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="bank-info">
+                    <h5>مصرف الراجحي</h5>
+                    <h6><span>رقم الحساب </span><span>121524541</span></h6>
+                    <h6><span>Iban رقم</span><span>32154</span></h6>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="omola-box site-omola-form site-omola-form2">
+                <h5>فضلا قم بادخال البيانات التالية</h5>
+                <form action="">
+                  <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="">اسم البنك المحول منه</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="6,000,000 ر.س">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="">اسم صاحب الحساب</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="6,000,000 ر.س">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="">صورة الحوالة</label>
+                        <input type="file" name="" id="" class="form-control" placeholder="6,000,000 ر.س">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12">
+                      <div class="btn-submit text-center mt-5 d-flex align-items-center justify-content-center">
+                        <button class="btn-style">ارسال</button>
+                        <button class="btn-style btn-cancel" data-bs-dismiss="modal">اغلاق</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
@@ -388,6 +543,7 @@
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
   <script src="./assets/js/jquery.nice-select.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>

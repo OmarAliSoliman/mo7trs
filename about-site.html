@@ -15,17 +15,59 @@
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
 
 <body class="body-color">
 
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="side-wrapper">
+        <div class="person-info">
+          <div class="card-img">
+            <div class="img-parent">
+              <img src="./assets/images/person.png" alt="">
+            </div>
+          </div>
+          <a href=""><img src="./assets/images/commentblack.svg" alt=""></a>
+          <a href=""><img src="./assets/images/billblack.svg" alt=""></a>
+        </div>
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item "><a class="nav-link" href="./index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">الاقسام</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">اتصل بنا</a></li>
+            <li class="login-item"><a href="" class="btn-style btn-style-rounded ">تسجيل الدخول</a></li>
+            <li class="signup-item"><a href="" class="btn-style btn-style-rounded new-account">انشاء حساب جديد</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="custom-navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+        <div class="col-6 col-md-4 col-lg-6 col-xl-7">
           <div class="logo-links d-flex align-items-center">
             <div class="menu_icon">
               <div id="nav-icon1">
@@ -50,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <div class="col-6 col-md-8 col-lg-6 col-xl-5">
           <div class="navbar-option mb-0  d-flex justify-content-end">
             <ul class="list-unstyled d-flex align-items-center">
               <li><a href="" class="chat-icon"><img src="./assets/images/chat.svg" alt=""></a></li>
@@ -72,11 +114,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 
   <div class="about-site">
     <div class="container-fluid pd-100">
@@ -102,20 +139,9 @@
         <p>
           “سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
         </p>
-        <div class="social">
-          <ul class="list-unstyled d-flex align-items-center">
-            <li><a href=""><img src="./assets/images/linked_icon.svg" alt=""></a></li>
-            <li><a href=""><img src="./assets/images/google_icon.svg" alt=""></a></li>
-            <li><a href=""><img src="./assets/images/insta_icon.svg" alt=""></a></li>
-            <li><a href=""><img src="./assets/images/twitter-icon.svg" alt=""></a></li>
-            <li><a href=""><img src="./assets/images/facebook_icon.svg" alt=""></a></li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
-
-
 
 
 
@@ -213,6 +239,7 @@
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
   <script src="./assets/js/wow.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
