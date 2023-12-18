@@ -725,8 +725,11 @@ p {
   flex-wrap: wrap;
 }
 
+.department-card {
+  display: block;
+  margin-left: 25px;
+}
 .department-card .card-icon {
-  margin-left: 30px;
   background-color: #fff;
   width: 116px;
   border-radius: 11px;
