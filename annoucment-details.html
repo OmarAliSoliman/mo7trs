@@ -201,7 +201,7 @@
             </li>
           </ul>
           <div class="warning">
-            <a href="">
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#videoModalAdding">
               <img src="./assets/images/warning.svg" alt="">
             </a>
           </div>
@@ -346,6 +346,29 @@
       </div>
     </div>
   </footer>
+
+
+
+    <!-- modal video -->
+  <!-- Modal -->
+  <div class="modal fade formmodal" id="videoModalAdding" tabindex="-1" aria-labelledby="videoModalAddingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="videoModalAddingLabel">التبليغ عن الاعلان</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" placeholder="" class="form-control">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>

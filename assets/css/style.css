@@ -1025,7 +1025,8 @@ p {
   flex-wrap: wrap;
 }
 
-.profile-owner-page .announsment-wrapper-filter, .myaccount-profile .announsment-wrapper-filter {
+.profile-owner-page .announsment-wrapper-filter,
+.myaccount-profile .announsment-wrapper-filter {
   justify-content: flex-end;
 }
 .announcement-cards {
@@ -1422,6 +1423,43 @@ p {
   background-color: #21be41;
   color: #fff;
 }
+.new-announsment-page .video-main-image {
+  display: flex;
+}
+.new-announsment-page .video-card {
+  background-color: transparent;
+  border: 0;
+  padding: 10px 10px !important;
+  height: auto;
+  border: 1px dashed #21be41;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 13px;
+}
+.new-announsment-page .video-card .card-img {
+  width: 143px;
+  height: 120px;
+  border-radius: 13px;
+  padding: 15px;
+}
+.new-announsment-page .video-card .card-img img {
+  border-radius: 13px;
+}
+.new-announsment-page .video-card .card-img .video-icon {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: rgba(33, 190, 65, 0.5);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
 /* ================================================================ */
 .profile-owner-page .profile-picture {
@@ -1457,6 +1495,16 @@ p {
 .profile-owner-page .profile-picture p span,
 .profile-owner-page .profile-picture p a {
   color: #000;
+}
+
+.formmodal .form-control {
+  height: 50px;
+  border: 1px solid #eee;
+}
+.formmodal .btn {
+  background-color: #21be41;
+  padding: 10px 60px;
+  border: 1px solid #21be41;
 }
 
 /* ================================================================ */
@@ -2772,23 +2820,23 @@ p {
 }
 
 /* ================================================================ */
-#isseelingmodal .modal-dialog {
+#isseelingmodal .modal-dialog, #deleteModal .modal-dialog {
   max-width: 90%;
   margin: auto;
-  width: 1280px;
+  width: 1000px;
 }
-#isseelingmodal .modal-dialog .modal-content {
+#isseelingmodal .modal-dialog .modal-content, #deleteModal .modal-dialog .modal-content {
   text-align: center;
 }
-#isseelingmodal .modal-dialog .modal-content img {
+#isseelingmodal .modal-dialog .modal-content img, #deleteModal .modal-dialog .modal-content img {
   width: 200px;
 }
-#isseelingmodal .modal-dialog .modal-content h5 {
+#isseelingmodal .modal-dialog .modal-content h5, #deleteModal .modal-dialog .modal-content h5 {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 20px;
 }
-#isseelingmodal .modal-dialog .modal-content a {
+#isseelingmodal .modal-dialog .modal-content a, #deleteModal .modal-dialog .modal-content a {
   width: 40%;
   background-color: #21be41;
   display: block;
@@ -2797,7 +2845,7 @@ p {
   border-radius: 10px;
   color: #fff;
 }
-#isseelingmodal .modal-dialog .modal-content a:last-child {
+#isseelingmodal .modal-dialog .modal-content a:last-child, #deleteModal .modal-dialog .modal-content a:last-child {
   background-color: #8d0000;
 }
 
