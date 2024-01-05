@@ -72,7 +72,7 @@ $(document).ready(function () {
   }
 
   if ($(".advanced-search-box").length) {
-    $(".btn-advanced-search").on("click", function (e) {
+    $(".btn-advanced-search .btn-style").on("click", function (e) {
       e.preventDefault();
       $(this).parent().find(".advanced-search-box").slideToggle();
     });
