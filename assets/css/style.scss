@@ -3314,6 +3314,20 @@ p {
   }
 }
 
+.iti.iti--allow-dropdown {
+  height: 100%;
+  width: 100%;
+  .iti__flag-container{
+    // left: 0;
+    // width: 100%;
+  }
+}
+.iti__dropdown-content{
+  direction: ltr;
+  max-width: max-content;
+  left: 0;
+}
+
 /* ================================================================ */
 #isseelingmodal, #deleteModal {
   .modal-dialog {

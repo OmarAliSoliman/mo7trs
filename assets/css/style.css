@@ -2819,6 +2819,17 @@ p {
   justify-content: flex-end;
 }
 
+.iti.iti--allow-dropdown {
+  height: 100%;
+  width: 100%;
+}
+.iti__dropdown-content {
+  direction: ltr;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  left: 0;
+}
+
 /* ================================================================ */
 #isseelingmodal .modal-dialog, #deleteModal .modal-dialog {
   max-width: 90%;

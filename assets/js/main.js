@@ -177,9 +177,7 @@ $(document).ready(function () {
             $(item).addClass("col-lg-6");
           });
         } else if (gridType == "grid") {
-          var coulmns = $(this)
-            .closest(".profile-left-data")
-            .find(".col-lg-6");
+          var coulmns = $(this).closest(".profile-left-data").find(".col-lg-6");
 
           $(coulmns).map((index, item) => {
             $(item).removeClass("col-lg-6");
@@ -193,6 +191,14 @@ $(document).ready(function () {
   AOS.init();
 
   $("html").addClass("splash-active");
+
+  if ($("#phone").length) {
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js",
+    });
+  }
 });
 
 $(window).on("load", function () {
